@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const Resume = (_props) => {
+const Resume = () => {
   return (
     <DynamicComponentWithNoSSR>
       <Document>
@@ -34,12 +34,6 @@ const Resume = (_props) => {
       </Document>
     </DynamicComponentWithNoSSR>
   )
-}
-
-export async function getServerSideProps(_context) {
-  return {
-    props: {},
-  }
 }
 
 export default Resume
