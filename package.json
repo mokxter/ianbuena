@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^2.0.0-beta.6",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
