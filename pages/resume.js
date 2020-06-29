@@ -11,19 +11,42 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100vh',
   },
+  leftSection: {
+    width: '40%',
+    backgroundColor: 'gray',
+    color: 'white',
+    height: '100vh',
+    padding: '16px'
+  },
   viewer: {
     width: '100%',
     height: 'inherit',
     border: 0
   },
+  header: {
+    fontSize: '29pt',
+    marginBottom: '4px',
+  },
+  subHeader: {
+    fontSize: '20pt',
+  },
+  jobHeader: {
+    fontSize: '25pt',
+  },
+  jobSubHeader: {
+    fontSize: '17pt',
+  },
+  paragraph: {
+    fontSize: '12pt'
+  },
   page: {
     flexDirection: 'row',
     backgroundColor: '#E4E4E4'
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
+  jobSection: {
+    marginBottom: '8px',
+  },
+  rightSection: {
   }
 });
 
@@ -34,11 +57,15 @@ const Resume = () => {
       <DynamicComponentWithNoSSR style={styles.viewer}>
         <Document>
           <Page size="LETTER" style={styles.page}>
-            <View style={styles.section}>
-              <Text>Section #1</Text>
+            <View style={styles.leftSection}>
+              <Text style={styles.header}>Ian Cristopher Buena</Text>
+              <Text style={styles.subHeader}>26e La Salle, Brgy. Silangan, Quezon City</Text>
             </View>
-            <View style={styles.section}>
-              <Text>Section #2</Text>
+            <View style={styles.rightSection}>
+              <View style={styles.jobSection}>
+                <Text style={styles.jobHeader}>Go Digital Corp | Software Eng. - NodeJS / DevOps</Text>
+                <Text style={styles.jobSubHeader}>Go Digital Corp | Software Eng. - NodeJS / DevOps</Text>
+              </View>
             </View>
           </Page>
         </Document>
