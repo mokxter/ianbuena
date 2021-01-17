@@ -5,6 +5,14 @@
         <h3 class="introduction">Hello, I am</h3>
         <h1 class="name">{{ title }}</h1>
         <span class="profession">Web Developer</span>
+        <div class="links">
+          <a href="https://github.com/mokxter">
+            <i class="bx bxl-github social"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ianbuena/">
+            <i class="bx bxl-linkedin social"></i>
+          </a>
+        </div>
       </div>
     </section>
   </div>
@@ -51,6 +59,14 @@ export default {
   @apply block text-5xl ml-8;
 }
 
+.links {
+  @apply block flex flex-row mt-16;
+}
+
+.social {
+  @apply block text-5xl ml-8;
+}
+
 @media (max-width: 1104px) {
   .home .max-with {
     margin-left: 0px;
@@ -75,6 +91,14 @@ export default {
 
   .profession {
     @apply block text-3xl ml-8;
+  }
+
+  .links {
+    @apply block flex flex-row mt-12;
+  }
+
+  .social {
+    @apply block text-4xl ml-8;
   }
 }
 
